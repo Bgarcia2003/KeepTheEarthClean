@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keeping the Earth Clean</title>
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS for navbar/buttons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="#">🌱 Earth Clean</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-success" href="#ecosia">Use Ecosia</a></li>
+          <li class="nav-item"><a class="nav-link text-success" href="#earthday">Join a Cleanup</a></li>
+          <li class="nav-item"><a class="nav-link text-success" href="#plantatree">Plant a Tree</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center p-5 bg-light">
+    <h1 class="display-4 text-success">Simple Ways to Keep the Earth Clean</h1>
+    <p class="lead text-muted">Take small actions that make a big difference.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="row g-4">
+
+      <!-- Ecosia Section -->
+      <section id="ecosia" class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="card-title text-success">🌳 Use Ecosia</h2>
+            <ul>
+              <li>Search the web and plant trees</li>
+              <li>Over 180 million trees planted</li>
+              <li>Free and easy to switch</li>
+            </ul>
+            <button class="btn btn-outline-success mt-3" onclick="toggleInfo('more-ecosia', this)">Learn More</button>
+            <p id="more-ecosia" class="hidden mt-3">Ecosia donates most of its ad revenue to tree planting projects around the world.</p>
+            <a href="https://www.ecosia.org/" class="btn btn-success mt-3" target="_blank">Visit Ecosia</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Earth Day Cleanup Section -->
+      <section id="earthday" class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="card-title text-success">🌎 Join a Cleanup</h2>
+            <ul>
+              <li>Find local Earth Day events</li>
+              <li>Help parks, beaches, and rivers</li>
+              <li>Meet people and clean up</li>
+            </ul>
+            <button class="btn btn-outline-success mt-3" onclick="toggleInfo('more-earthday', this)">Learn More</button>
+            <p id="more-earthday" class="hidden mt-3">EarthDay.org organizes thousands of cleanups each April to protect our communities.</p>
+            <a href="https://www.earthday.org/campaign/cleanup/" class="btn btn-success mt-3" target="_blank">Find a Cleanup</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plant a Tree Section -->
+      <section id="plantatree" class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="card-title text-success">🌱 Plant a Tree for $1</h2>
+            <ul>
+              <li>Each $1 plants one tree</li>
+              <li>Support reforestation projects</li>
+              <li>Easy and impactful action</li>
+            </ul>
+            <button class="btn btn-outline-success mt-3" onclick="toggleInfo('more-plantatree', this)">Learn More</button>
+            <p id="more-plantatree" class="hidden mt-3">One Tree Planted makes it easy to donate and help forests around the world for just $1.</p>
+            <a href="https://onetreeplanted.org/" class="btn btn-success mt-3" target="_blank">Donate Now</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-success text-light">
+    <p>© 2025 Bryan Garcia Diaz | GD107 | Keep Earth Clean Project</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
